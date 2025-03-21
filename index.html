@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Tools Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .tool-card {
+            transition: all 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .result-box {
+            min-height: 150px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .tab-active {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto py-4 px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">SEO Tools Hub</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-200">Home</a>
+                    <a href="#" class="hover:text-blue-200">Tools</a>
+                    <a href="#" class="hover:text-blue-200">About</a>
+                    <a href="#" class="hover:text-blue-200">Contact</a>
+                </div>
+                <button class="md:hidden text-xl">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto p-4">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">All-in-One SEO Tools</h1>
+            <p class="text-gray-600">Free tools to help optimize your website, analyze content, and improve your online presence.</p>
+        </div>
+
+        <div class="mb-8">
+            <div class="overflow-x-auto scrollbar-hide">
+                <div class="flex space-x-6 py-2">
+                    <button class="tab-active whitespace-nowrap px-3 py-2 font-medium">Text Analysis</button>
+                    <button class="whitespace-nowrap px-3 py-2 font-medium text-gray-600">AI Writing</button>
+                    <button class="whitespace-nowrap px-3 py-2 font-medium text-gray-600">Design Studio</button>
+                    <button class="whitespace-nowrap px-3 py-2 font-medium text-gray-600">Image Editing</button>
+                    <button class="whitespace-nowrap px-3 py-2 font-medium text-gray-600">Keyword Tools</button>
+                    <button class="whitespace-nowrap px-3 py-2 font-medium text-gray-600">Backlink Tools</button>
+                    <button class="whitespace-nowrap px-3 py-2 font-medium text-gray-600">Website Management</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12 bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-file-text text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Text Analysis Tools</h2>
+            </div>
+            <p class="text-gray-600 mb-6">A complete set of text tools is now at your fingertips. Check plagiarism, rewrite an article, run a spell checker, count words or change text case.</p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <a href="#plagiarism" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-shield-check text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">Plagiarism Checker</span>
+                </a>
+                <a href="#rewriter" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-pencil-square text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">Article Rewriter</span>
+                </a>
+                <a href="#grammar" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-check-circle text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">Grammar Checker</span>
+                </a>
+                <a href="#counter" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-123 text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">Word Counter</span>
+                </a>
+                <a href="#spell" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-spellcheck text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">Spell Checker</span>
+                </a>
+                <a href="#paraphrase" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-arrow-repeat text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">Paraphrasing Tool</span>
+                </a>
+                <a href="#md5" class="tool-card p-4 bg-gray-50 rounded-lg flex flex-col items-center text-center">
+                    <i class="bi bi-key text-3xl text-blue-500 mb-2"></i>
+                    <span class="text-sm font-medium">MD5 Generator</span>
+                </a>
+            </div>
+            <button class="mt-6 text-blue-600 flex items-center">
+                View all text tools
+                <i class="bi bi-chevron-right ml-1"></i>
+            </button>
+        </div>
+
+        <!-- Plagiarism Checker Section -->
+        <div id="plagiarism" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-shield-check text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Plagiarism Checker</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Check if your content is original or plagiarized from other sources.</p>
+            
+            <div class="mb-4">
+                <textarea id="plagiarismText" class="w-full p-3 border rounded-lg" rows="6" placeholder="Enter your text to check for plagiarism..."></textarea>
+            </div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <span class="text-gray-500"><span id="plagiarismWordCount">0</span> words</span>
+                </div>
+                <button onclick="checkPlagiarism()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="bi bi-search mr-2"></i>
+                    Check Plagiarism
+                </button>
+            </div>
+            <div id="plagiarismResult" class="result-box hidden"></div>
+            
+            <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                <h3 class="text-lg font-medium mb-2">What is Plagiarism?</h3>
+                <p class="text-gray-600">Plagiarism is the act of using someone else's work or ideas without giving proper credit. Our plagiarism checker helps you identify copied content and maintain academic integrity.</p>
+            </div>
+        </div>
+
+        <!-- Word Counter Section -->
+        <div id="counter" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-123 text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Word Counter</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Count words, characters, sentences, and paragraphs in your text.</p>
+            
+            <textarea id="wordCountText" class="w-full p-3 border rounded-lg" rows="4" placeholder="Type or paste your text here..."></textarea>
+            
+            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center p-3 bg-gray-100 rounded">
+                    <p class="font-bold" id="wordCount">0</p>
+                    <p class="text-sm">Words</p>
+                </div>
+                <div class="text-center p-3 bg-gray-100 rounded">
+                    <p class="font-bold" id="charCount">0</p>
+                    <p class="text-sm">Characters</p>
+                </div>
+                <div class="text-center p-3 bg-gray-100 rounded">
+                    <p class="font-bold" id="sentenceCount">0</p>
+                    <p class="text-sm">Sentences</p>
+                </div>
+                <div class="text-center p-3 bg-gray-100 rounded">
+                    <p class="font-bold" id="paragraphCount">0</p>
+                    <p class="text-sm">Paragraphs</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                <h3 class="text-lg font-medium mb-2">Why Count Words?</h3>
+                <p class="text-gray-600">Word count is essential for academic papers, blog posts, and SEO. Our word counter helps you track your content length accurately.</p>
+            </div>
+        </div>
+
+        <!-- Grammar Checker Section -->
+        <div id="grammar" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-check-circle text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Grammar Checker</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Identify and correct grammatical errors in your writing.</p>
+            
+            <textarea id="grammarText" class="w-full p-3 border rounded-lg" rows="6" placeholder="Enter text to check grammar..."></textarea>
+            
+            <div class="flex justify-end mt-4">
+                <button onclick="checkGrammar()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="bi bi-pencil-square mr-2"></i>
+                    Check Grammar
+                </button>
+            </div>
+            
+            <div id="grammarResult" class="result-box hidden"></div>
+            
+            <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                <h3 class="text-lg font-medium mb-2">Why Check Grammar?</h3>
+                <p class="text-gray-600">Proper grammar is crucial for creating professional content. Our grammar checker helps identify mistakes and improve your writing quality.</p>
+            </div>
+        </div>
+        
+        <!-- Article Rewriter -->
+        <div id="rewriter" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-pencil-square text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Article Rewriter</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Rewrite articles to create unique content without plagiarism.</p>
+            
+            <textarea id="rewriterText" class="w-full p-3 border rounded-lg" rows="6" placeholder="Paste your article to rewrite..."></textarea>
+            
+            <div class="flex justify-end mt-4">
+                <button onclick="rewriteArticle()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="bi bi-arrow-repeat mr-2"></i>
+                    Rewrite Article
+                </button>
+            </div>
+            
+            <div id="rewriterResult" class="result-box hidden"></div>
+            
+            <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                <h3 class="text-lg font-medium mb-2">About Article Rewriting</h3>
+                <p class="text-gray-600">Our article rewriter helps you create fresh content by rephrasing sentences while maintaining the original meaning.</p>
+            </div>
+        </div>
+
+        <!-- Paraphrasing Tool -->
+        <div id="paraphrase" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-arrow-repeat text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Paraphrasing Tool</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Rephrase your text to make it unique and avoid plagiarism.</p>
+            
+            <textarea id="paraphraseText" class="w-full p-3 border rounded-lg" rows="6" placeholder="Enter text to paraphrase..."></textarea>
+            
+            <div class="flex justify-between items-center mt-4">
+                <div class="flex">
+                    <div class="mr-4">
+                        <label class="block text-sm text-gray-600 mb-1">Mode:</label>
+                        <select class="border rounded p-2">
+                            <option>Standard</option>
+                            <option>Fluency</option>
+                            <option>Creative</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-600 mb-1">Language:</label>
+                        <select class="border rounded p-2">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="paraphraseText()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="bi bi-arrow-repeat mr-2"></i>
+                    Paraphrase
+                </button>
+            </div>
+            
+            <div id="paraphraseResult" class="result-box hidden"></div>
+        </div>
+
+        <!-- Spell Checker -->
+        <div id="spell" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-spellcheck text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">Spell Checker</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Check your text for spelling errors and get suggestions.</p>
+            
+            <textarea id="spellText" class="w-full p-3 border rounded-lg" rows="6" placeholder="Enter text to check spelling..."></textarea>
+            
+            <div class="flex justify-end mt-4">
+                <button onclick="checkSpelling()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="bi bi-spellcheck mr-2"></i>
+                    Check Spelling
+                </button>
+            </div>
+            
+            <div id="spellResult" class="result-box hidden"></div>
+        </div>
+
+        <!-- MD5 Generator -->
+        <div id="md5" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="bi bi-key text-2xl text-blue-600 mr-3"></i>
+                <h2 class="text-2xl font-semibold">MD5 Generator</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Generate MD5 hash from text or string.</p>
+            
+            <input type="text" id="md5Text" class="w-full p-3 border rounded-lg" placeholder="Enter text to generate MD5 hash...">
+            
+            <div class="flex justify-end mt-4">
+                <button onclick="generateMD5()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="bi bi-key mr-2"></i>
+                    Generate MD5
+                </button>
+            </div>
+            
+            <div id="md5Result" class="result-box hidden"></div>
+            
+            <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                <h3 class="text-lg font-medium mb-2">What is MD5?</h3>
+                <p class="text-gray-600">MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function that produces a 128-bit hash value. It's commonly used to verify data integrity.</p>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Popular Tools</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="tool-card p-4 bg-white rounded-lg shadow-sm text-center">
+                    <i class="bi bi-shield-check text-3xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Plagiarism Checker</h3>
+                </div>
+                <div class="tool-card p-4 bg-white rounded-lg shadow-sm text-center">
+                    <i class="bi bi-robot text-3xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">AI Writer</h3>
+                </div>
+                <div class="tool-card p-4 bg-white rounded-lg shadow-sm text-center">
+                    <i class="bi bi-search text-3xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Keyword Research</h3>
+                </div>
+                <div class="tool-card p-4 bg-white rounded-lg shadow-sm text-center">
+                    <i class="bi bi-link text-3xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Backlink Checker</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SEO Tools Hub</h3>
+                    <p class="text-gray-400">All-in-one platform for SEO and content optimization tools.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Popular Tools</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Plagiarism Checker</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Word Counter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Grammar Checker</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Article Rewriter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="bi bi-envelope-fill mr-2"></i> info@seotoolshub.com</li>
+                        <li class="flex items-center text-gray-400"><i class="bi bi-telephone-fill mr-2"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 SEO Tools Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Word Counter Functionality
+        const wordCountText = document.getElementById('wordCountText');
+        const wordCount = document.getElementById('wordCount');
+        const charCount = document.getElementById('charCount');
+        const sentenceCount = document.getElementById('sentenceCount');
+        const paragraphCount = document.getElementById('paragraphCount');
+
+        wordCountText.addEventListener('input', () => {
+            const text = wordCountText.value;
+            const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+            wordCount.textContent = words.length;
+            charCount.textContent = text.length;
+            
+            // Count sentences (rough approximation)
+            const sentences = text.split(/[.!?]+/).filter(sentence => sentence.trim().length > 0);
+            sentenceCount.textContent = sentences.length;
+            
+            // Count paragraphs
+            const paragraphs = text.split(/\n+/).filter(para => para.trim().length > 0);
+            paragraphCount.textContent = paragraphs.length;
+        });
+
+        // Plagiarism Checker Simulation
+        function checkPlagiarism() {
+            const text = document.getElementById('plagiarismText').value;
+            const result = document.getElementById('plagiarismResult');
+            result.classList.remove('hidden');
+            
+            if (text.trim() === '') {
+                result.innerHTML = '<p class="text-red-500">Please enter some text to check for plagiarism.</p>';
+                return;
+            }
+
+            // Count words for display
+            document.getElementById('plagiarismWordCount').textContent = text.trim().split(/\s+/).filter(word => word.length > 0).length;
+
+            // Simulating check with progress bar
+            result.innerHTML = '<div class="text-center mb-4"><p>Checking for plagiarism...</p><div class="w-full bg-gray-200 rounded-full h-2.5 mt-2"><div class="bg-blue-600 h-2.5 rounded-full" style="width: 0%" id="progress-bar"></div></div></div>';
+            
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 10;
+                document.getElementById('progress-bar').style.width = progress + '%';
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    
+                    // Generate random similarity index between 0-15%
+                    const similarityIndex = (Math.random() * 15).toFixed(1);
+                    
+                    // Show results
+                    if (similarityIndex < 5) {
+                        result.innerHTML = `
+                            <div class="p-4 bg-green-50 border-l-4 border-green-500 mb-4">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-check-circle-fill text-green-500 text-xl"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-green-700 font-medium">Your content appears to be original</p>
+                                        <p class="text-green-600 text-sm">Similarity index: ${similarityIndex}%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-lg font-medium mb-2">Detailed Results:</h3>
+                                <div class="bg-gray-50 p-3 rounded border">
+                                    <div class="flex justify-between mb-2">
+                                        <span>Unique Content:</span>
+                                        <span>${(100 - similarityIndex).toFixed(1)}%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                        <div class="bg-green-500 h-2.5 rounded-full" style="width: ${100 - similarityIndex}%"></div>
+                                    </div>
+                                </div>
+                            </div>`;
+                    } else {
+                        result.innerHTML = `
+                            <div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 mb-4">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-exclamation-triangle-fill text-yellow-500 text-xl"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-yellow-700 font-medium">Some similarities detected</p>
+                                        <p class="text-yellow-600 text-sm">Similarity index: ${similarityIndex}%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-lg font-medium mb-2">Detailed Results:</h3>
+                                <div class="bg-gray-50 p-3 rounded border">
+                                    <div class="flex justify-between mb-2">
+                                        <span>Unique Content:</span>
+                                        <span>${(100 - similarityIndex).toFixed(1)}%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                        <div class="bg-green-500 h-2.5 rounded-full" style="width: ${100 - similarityIndex}%"></div>
+                                    </div>
+                                </div>
+                            </div>`;
+                    }
+                }
+            }, 200);
+        }
+
+        // Grammar Checker Simulation
+        function checkGrammar() {
+            const text = document.getElementById('grammarText').value;
+            const result = document.getElementById('grammarResult');
+            result.classList.remove('hidden');
+            
+            if (text.trim() === '') {
+                result.innerHTML = '<p class="text-red-500">Please enter some text to check grammar.</p>';
+                return;
+            }
+
+            // Simulating check with loading indicator
+            result.innerHTML = '<div class="text-center"><i class="bi bi-hourglass-split text-blue-500 text-2xl"></i><p class="mt-2">Analyzing grammar...</p></div>';
+            
+            setTimeout(() => {
+                // Simulate random grammar issues
+                const errorCount = Math.floor(Math.random() * 4);
+                
+                if (errorCount === 0) {
+                    result.innerHTML = `
+                        <div class="p-4 bg-green-50 border-l-4 border-green-500">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill text-green-500 text-xl"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-green-700 font-medium">No grammatical errors found</p>
+                                    <p class="text-green-600 text-sm">Your text appears to be grammatically correct.</p>
+                                </div>
+                            </div>
+                        </div>`;
+                } else {
+                    const errors = [
+                        "Subject-verb agreement issue in sentence 2",
+                        "Missing comma in complex sentence",
+                        "Incorrect use of 'its' instead of 'it's'",
+                        "Run-on sentence detected"
+                    ].slice(0, errorCount);
+                    
+                    let errorHTML = '';
+                    errors.forEach(error => {
+                        errorHTML += `<li class="mb-2 flex items-start">
+                            <i class="bi bi-exclamation-circle text-yellow-500 mr-2"></i>
+                            <span>${error}</span>
+                        </li>`;
+                    });
+                    
+                    result.innerHTML = `
+                        <div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 mb-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-exclamation-triangle-fill text-yellow-500 text-xl"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-yellow-700 font-medium">${errorCount} grammatical issue${errorCount > 1 ? 's' : ''} found</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="ml-2 mt-4">
+                            ${errorHTML}
+                        </ul>`;
+                }
+            }, 1500);
+        }
+        
+        // Article Rewriter Function
+        function rewriteArticle() {
+            const text = document.getElementById('rewriterText').value;
+            const result = document.getElementById('rewriterResult');
+            result.classList.remove('hidden');
+            
+            if (text.trim() === '') {
+                result.innerHTML = '<p class="text-red-500">Please enter some text to rewrite.</p>';
+                return;
+            }
+            
+            // Simulating rewriting with loading indicator
+            result.innerHTML = '<div class="text-center"><i class="bi bi-arrow-repeat text-blue-500 text-2xl animate-spin"></i><p class="mt-2">Rewriting article...</p></div>';
+            
+            setTimeout(() => {
+                // Simple simulation of rewritten text by keeping structure but changing some words
+                let rewritten = text;
+                
+                // Basic word replacements (in a real tool, this would be more sophisticated)
+                const replacements = {
+                    'good': 'excellent',
+                    'bad': 'poor',
+                    'big': 'large',
+                    'small': 'tiny',
+                    'fast': 'quick',
+                    'slow': 'sluggish',
+                    'said': 'mentioned',
+                    'think': 'believe',
+                    'use': 'utilize',
+                    'make': 'create'
+                };
+                
+                Object.keys(replacements).forEach(word => {
+                    const regex = new RegExp('\\b' + word + '\\b', 'gi');
+                    rewritten = rewritten.replace(regex, replacements[word]);
+                });
+                
+                result.innerHTML = `
+                    <div class="mb-4">
+                        <h3 class="text-lg font-medium">Rewritten Article:</h3>
+                        <div class="mt-2 p-4 bg-gray-50 rounded border">
+                            ${rewritten}
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                            <i class="bi bi-clipboard mr-2"></i> Copy
+                        </button>
+                    </div>`;
+            }, 2000);
+        }
+        
+        // Paraphrasing Tool Function
+        function paraphraseText() {
+            const text = document.getElementById('paraphraseText').value;
+            const result = document.getElementById('paraphraseResult');
+            result.classList.remove('hidden');
+            
+            if (text.trim() === '') {
+                result.innerHTML = '<p class="text-red-500">Please enter some text to paraphrase.</p>';
+                return;
+            }
+            
+            // Simulating paraphrasing with loading
+            result.innerHTML = '<div class="text-center"><i class="bi bi-arrow-repeat text-blue-500 text-2xl animate-spin"></i><p class="mt-2">Paraphrasing text...</p></div>';
+            
+            setTimeout(() => {
+                // Simple sentence structure changes and word replacements
+                let paraphrased = text;
+                
+                // Basic word replacements (simplified for demo)
+                const replacements = {
+                    'good': 'excellent',
+                    'bad': 'poor',
+                    'big': 'large',
+                    'small': 'tiny',
+                    'important': 'crucial',
+                    'many': 'numerous',
+                    'few': 'limited',
+                    'using': 'utilizing',
+                    'makes': 'creates',
+                    'shows': 'demonstrates'
+                };
+                
+                Object.keys(replacements).forEach(word => {
+                    const regex = new RegExp('\\b' + word + '\\b', 'gi');
+                    paraphrased = paraphrased.replace(regex, replacements[word]);
+                });
+                
+                // Show original vs. paraphrased comparison
+                result.innerHTML = `
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">Original Text:</h3>
+                            <div class="p-4 bg-gray-50 rounded border">
+                                ${text}
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">Paraphrased Text:</h3>
+                            <div class="p-4 bg-blue-50 rounded border">
+                                ${paraphrased}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end mt-4">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                            <i class="bi bi-clipboard mr-2"></i> Copy Result
+                        </button>
+                    </div>`;
+            }, 1800);
+        }
+        
+        // Spell Checker Function
+        function checkSpelling() {
+            const text = document.getElementById('spellText').value;
+            const result = document.getElementById('spellResult');
+            result.classList.remove('hidden');
+            
+            if (text.trim() === '') {
+                result.innerHTML = '<p class="text-red-500">Please enter some text to check spelling.</p>';
+                return;
+            }
+            
+            // Simulating spell checking
+            result.innerHTML = '<div class="text-center"><i class="bi bi-search text-blue-500 text-2xl"></i><p class="mt-2">Checking spelling...</p></div>';
+            
+            setTimeout(() => {
+                // Simulate some spelling errors (for demo purposes)
+                const errorCount = Math.floor(Math.random() * 3);
+                
+                if (errorCount === 0) {
+                    result.innerHTML = `
+                        <div class="p-4 bg-green-50 border-l-4 border-green-500">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill text-green-500 text-xl"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-green-700 font-medium">No spelling errors found</p>
+                                    <p class="text-green-600 text-sm">Your text appears to be spelled correctly.</p>
+                                </div>
+                            </div>
+                        </div>`;
+                } else {
+                    // Simulate highlighting errors in the text
+                    let highlightedText = text;
+                    const words = text.split(' ');
+                    
+                    // Choose random words to mark as incorrect (for demo)
+                    const errorIndices = [];
+                    while (errorIndices.length < errorCount && errorIndices.length < words.length) {
+                        const randomIndex = Math.floor(Math.random() * words.length);
+                        if (!errorIndices.includes(randomIndex) && words[randomIndex].length > 3) {
+                            errorIndices.push(randomIndex);
+                        }
+                    }
+                    
+                    // Create list of spelling errors
+                    let errorHTML = '';
+                    errorIndices.forEach(index => {
+                        errorHTML += `<li class="mb-3">
+                            <span class="text-red-500 font-medium">${words[index]}</span>
+                            <span class="text-gray-600"> - Possible corrections: </span>
+                            <button class="ml-2 text-blue-600 hover:underline">correction1</button>
+                            <button class="ml-2 text-blue-600 hover:underline">correction2</button>
+                        </li>`;
+                        
+                        // Highlight the error in the text
+                        highlightedText = highlightedText.replace(
+                            new RegExp('\\b' + words[index] + '\\b', 'g'),
+                            `<span class="bg-red-100 text-red-700">${words[index]}</span>`
+                        );
+                    });
+                    
+                    result.innerHTML = `
+                        <div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 mb-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-spellcheck text-yellow-500 text-xl"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-yellow-700 font-medium">${errorCount} spelling error${errorCount > 1 ? 's' : ''} found</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 p-4 bg-gray-50 rounded border">
+                            ${highlightedText}
+                        </div>
+                        <h3 class="text-lg font-medium mb-2">Suggestions:</h3>
+                        <ul class="ml-2">
+                            ${errorHTML}
+                        </ul>`;
+                }
+            }, 1500);
+        }
+        
+        // MD5 Generator Function
+        function generateMD5() {
+            const text = document.getElementById('md5Text').value;
+            const result = document.getElementById('md5Result');
+            result.classList.remove('hidden');
+            
+            if (text.trim() === '') {
+                result.innerHTML = '<p class="text-red-500">Please enter some text to generate MD5 hash.</p>';
+                return;
+            }
+            
+            // Simulating MD5 generation
+            result.innerHTML = '<div class="text-center"><i class="bi bi-key text-blue-500 text-2xl"></i><p class="mt-2">Generating MD5 hash...</p></div>';
+            
+            setTimeout(() => {
+                // Since we can't actually compute MD5 without an external library,
+                // we'll simulate it with a random hex string for demo purposes
+                const chars = '0123456789abcdef';
+                let hash = '';
+                for (let i = 0; i < 32; i++) {
+                    hash += chars.charAt(Math.floor(Math.random() * chars.length));
+                }
+                
+                result.innerHTML = `
+                    <div class="mb-4">
+                        <h3 class="text-lg font-medium mb-2">MD5 Hash:</h3>
+                        <div class="flex items-center">
+                            <input type="text" value="${hash}" class="flex-1 p-3 font-mono bg-gray-100 border rounded" readonly />
+                            <button class="ml-2 bg-blue-600 text-white px-4 py-3 rounded hover:bg-blue-700">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <p>Input text: "${text}"</p>
+                    </div>`;
+            }, 800);
+        }
+        
+        // Add plagiarism word count
+        const plagiarismText = document.getElementById('plagiarismText');
+        const plagiarismWordCount = document.getElementById('plagiarismWordCount');
+        
+        plagiarismText.addEventListener('input', () => {
+            const text = plagiarismText.value;
+            const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+            plagiarismWordCount.textContent = words.length;
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
